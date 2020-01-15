@@ -1,52 +1,103 @@
-<head>
-	<title>Login Admin</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="frontend/login/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="frontend/login/css/util.css">
-	<link rel="stylesheet" type="text/css" href="frontend/login/css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-@yield('content')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="/frontend/fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="/frontend/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/frontend/css/jquery-ui.css">
+  <link rel="stylesheet" href="/frontend/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/frontend/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/frontend/css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="/frontend/css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="/frontend/css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="/frontend/css/aos.css">
+  <link href="/frontend/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="/frontend/css/style.css">
 
 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Halaman Login</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url('frontend/images/build.jpg');">
+        <div class="flex-center position-ref full-height">
+                <div class="top-right links">
+                </div>
 
 
-<!--===============================================================================================-->
-	<script src="/frontend/login/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/frontend/login/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/frontend/login/vendor/bootstrap/js/popper.js"></script>
-	<script src="/frontend/login/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/frontend/login/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/frontend/login/vendor/daterangepicker/moment.min.js"></script>
-	<script src="/frontend/login/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="/frontend/login/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="/frontend/login/js/main.js"></script>
+            <div class="content">
+                <div class="title m-b-md">
+                   Halaman Login
+                </div>
 
-</body>
+                <div class="links">
+                <a href="{{url('login_guru')}}" class="small btn btn-danger px-4 py-2 rounded-0" style="margin-right:50px"><span> Login Guru</span></a>
+                <a href="{{url('login_siswa')}}" class="small btn btn-info px-4 py-2 rounded-0"><span > Login Siswa</span></a>
+
+            </div>
+            </div>
+        </div>
+    </body>
 </html>

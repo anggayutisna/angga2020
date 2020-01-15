@@ -27,6 +27,17 @@ Route::get('/admin', function () {
     return view('admin.index');
 });
 
+Route::get('/halaman_login', function () {
+    return view('frontend.Login.login');
+});
+
+Route::get('/login_guru', function () {
+    return view('frontend.Login.loginguru');
+});
+
+Route::get('/login_siswa', function () {
+    return view('frontend.Login.loginsiswa');
+});
 
 Auth::routes();
 

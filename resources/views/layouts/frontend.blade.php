@@ -84,9 +84,8 @@
 
           </div>
           <div class="col-lg-3 text-right">
-            <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Masuk</a>
-            <a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Daftar</a>
-          </div>
+          <a href="{{url('halaman_login')}}" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-unlock-alt"></span> Masuk</a>
+             </div>
 
         </div>
       </div>
