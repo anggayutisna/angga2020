@@ -21,6 +21,8 @@ class Siswa extends Migration
             $table->string('tempat_tinggal');
             $table->date('tanggal_lahir');
             $table->integer('no_telpon');
+            $table->string('email');
+            $table->string('password');
             $table->timestamps();
         });
     }
